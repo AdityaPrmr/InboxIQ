@@ -1,0 +1,4 @@
+onebox-frontend/node_modules
+onebox-backend/node_modules
+**/.env
+**/node_modules

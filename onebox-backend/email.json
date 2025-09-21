@@ -1,0 +1,37 @@
+{
+  "seq": 25,
+  "emailId": "1843767299171933451",
+  "uid": 1293,
+  "modseq": "137538",
+  "envelope": {
+    "date": "2025-09-20T07:31:48.000Z",
+    "subject": "Hi how are you",
+    "from": [
+      {
+        "name": "Aditya Parmar",
+        "address": "parmar2100parmar@gmail.com"
+      }
+    ],
+    "sender": [
+      {
+        "name": "Aditya Parmar",
+        "address": "parmar2100parmar@gmail.com"
+      }
+    ],
+    "replyTo": [
+      {
+        "name": "Aditya Parmar",
+        "address": "parmar2100parmar@gmail.com"
+      }
+    ],
+    "to": [
+      {
+        "name": "",
+        "address": "adityaparmar2003official@gmail.com"
+      }
+    ],
+    "messageId": "<CAGxPmpTff41q5Z38+wv=BTMFoj59i5aE6qH5PN3Ajk4j3W3yBw@mail.gmail.com>"
+  },
+  "source": "Delivered-To: adityaparmar2003official@gmail.com\r\nReceived: by 2002:a05:6a11:8210:b0:657:5297:b0dc with SMTP id cj16csp665729pxc;\r\n        Sat, 20 Sep 2025 00:31:59 -0700 (PDT)\r\nX-Received: by 2002:a05:6214:2a4d:b0:76a:fcee:97a2 with SMTP id 6a1803df08f44-7991312ce40mr62359596d6.15.1758353518976;\r\n        Sat, 20 Sep 2025 00:31:58 -0700 (PDT)\r\nARC-Seal: i=1; a=rsa-sha256; t=1758353518; cv=none;\r\n        d=google.com; s=arc-20240605;\r\n        b=YOU5xXo4cjIwbkhrRX9ypkNHp3uii0YSMDyzc2fEJEFwvnmIJsFPyTiT6P+zko1ErI\r\n         hSDnHPbxyo8OaEelPCMXy+x2W99o/HIY5oBcf172NOZXykFWnPtgpddyUI973vbXNJPb\r\n         L9T7bCzWfT/Z/mj/qejFIxYDb7FeV4o2NasnsbIkPyatU8WTDC7NxDQjAgmGVAaLJOwz\r\n         esgq7REeSSJHirbzOf1OPn9YHS8peWj2XfNbho/LcP4W/jd7Kas2Ep0SzduPhAFuVnJU\r\n         d+84OnMazASyXocPlNPVqAI1UrhkpRZyXxtYw89zTGI/8ZTEgZA0Es4Dd8rLGXvQZFHK\r\n         NrZA==\r\nARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;\r\n        h=to:subject:message-id:date:from:mime-version:dkim-signature;\r\n        bh=WS4dM5CAQSO3ZaMWlkZkwM2/MaTD6RlHamVojmtwhXs=;\r\n        fh=YWJaANdLOnRmHeojubeQHHOQ7haqsM6f3hnf5mOqsbs=;\r\n        b=CA5j8VXFLvFezuJEzm4m/jstX0SvJky8pd6r/9wbFTGmVTBJ5FS3f8chzae/XJ3wrT\r\n         n98pZM7WxEz1Lwu9VHEuiH0S8D2JtYGfkCBb0b6xbOFZRV0Y+shW5APX6QqFt2NXyuwU\r\n         RdypD63YwxKDnlv8DTtXgpPz/7rv1MLYnBOqutPZyKZj8dE7Puor5c6To9YUPo9CKS5l\r\n         ol/ymnG84EipazSz7uEd4vLtEZRYpt2zCBI5JimBOSYFBaj5V2gnLAFTMciOV6SSRzHd\r\n         DIHITvT9Akfus0n9oEIgl7nip9UFXkfcMDXYsixdZd2FhkwCtgEwSguh7l/JheqLQUSG\r\n         nwXw==;\r\n        dara=google.com\r\nARC-Authentication-Results: i=1; mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=QNui2Xru;\r\n       spf=pass (google.com: domain of parmar2100parmar@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=parmar2100parmar@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com\r\nReturn-Path: <parmar2100parmar@gmail.com>\r\nReceived: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])\r\n        by mx.google.com with SMTPS id 6a1803df08f44-793532b55a7sor39787446d6.7.2025.09.20.00.31.58\r\n        for <adityaparmar2003official@gmail.com>\r\n        (Google Transport Security);\r\n        Sat, 20 Sep 2025 00:31:58 -0700 (PDT)\r\nReceived-SPF: pass (google.com: domain of parmar2100parmar@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;\r\nAuthentication-Results: mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=QNui2Xru;\r\n       spf=pass (google.com: domain of parmar2100parmar@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=parmar2100parmar@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com\r\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1758353518; x=1758958318; dara=google.com;\r\n        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=WS4dM5CAQSO3ZaMWlkZkwM2/MaTD6RlHamVojmtwhXs=;\r\n        b=QNui2XruYs1FsD4QSRvGilQKVAreieDX1zpQsYLTNJGq3P6tE4HQi2om3L1jI0YRX3\r\n         pN0JEENRMuNiKHoSAtE9NsbGge+m4xHWe4HjEWJX8VK1bJuvgFME8HrdVaqZakM5eYCG\r\n         DKVw5Jp4LjkRdaUIitUk6gypmDS8sbA3t9oGftU1S5iNmlLSwGYlsnp91Atk6VwspAMZ\r\n         BqONw9nVP1Cvo2/67LpakoqksyF7esYHDQ5qFN8JfkaF0/aHaFoYP3PLvamhjLx9xY/7\r\n         TYYNveoOPa+JBEaDq50YdrdTRkWODEj6JOhw2kLuJKcHCaoOiKqrynDvMQ+bskByMJZT\r\n         njzQ==\r\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1758353518; x=1758958318;\r\n        h=to:subject:message-id:date:from:mime-version:x-gm-message-state\r\n         :from:to:cc:subject:date:message-id:reply-to;\r\n        bh=WS4dM5CAQSO3ZaMWlkZkwM2/MaTD6RlHamVojmtwhXs=;\r\n        b=o2K9vhKTnrMP2DVE67f/UtYFKhzpCTkoJBrUTxTD6w0TYV5DIBYXHjc6508Zt4DAJf\r\n         j0uNVLK3z9AwXQU91O779QO3Ql2p9wEduWgMqZ5T5ieBKn76yvJlOwNTVa/0DhBED6JV\r\n         OUDSJlC20Dg90x3CqWEskQCLpR3vbW4r22k272HYr0uGxOMPp6vh9VYk0VYXxuNx43yR\r\n         xd4DZ9nzoaSOV0JrwrZPJiQCdtHT4ddIOgJEr4NANi0lJefJSJUO6PNNWbUxzI+WOxew\r\n         3z677GtuNTDEqB3CukW2VPYpi5ZPuUwMwLufwpF7acBEcsqPJ2A1126hPLhmisEqav8F\r\n         060w==\r\nX-Gm-Message-State: AOJu0YyNqDcKsZpmjAaDrU1awnF2p6hZN5o/YqXo1tTcC7h/HQye9LXS\r\n\tO01fCfqCKKeTD2V9waisDHoy0Kdg/KB66TXQKP0OCv8bXmnp2/rXgTgqOZkaYH2wOQLTBCyxvDp\r\n\t7Y4W7ceq/CI9E5Bk7+w5DTn0xXWrTtCJafVUb\r\nX-Gm-Gg: ASbGncv6YzX+IsU+HXmydev3fejdnszpQqU8fvS+7q1mZKgsKt+QurQbd/ZlbiujWc+\r\n\tFQDFzihpVFh/irhcL5cMXFyI+PfPE9O5ZelWsCiaIlo4iOyJGnpVc/rxwXrwkuvUbHveNRLjflw\r\n\tOYuy9H8Pe6BpkoTA+oJsFYwKn+MA0oGyTxvfdh+5O+w3uYJvREHGH6/AxLR+7HooL/dZ8ZnWgvz\r\n\ti3GVy8edSzQU76RhFD0kIJ/pd7z\r\nX-Google-Smtp-Source: AGHT+IHz4iguB1VoW6yBcxmuV0GGY7R89hj2C2//7IAeHfeO77IiN0WQxv8+zlDoWnOcHo9nAXSmKUkuqBJT7/wHwnQ=\r\nX-Received: by 2002:ad4:5fca:0:b0:714:19c0:623 with SMTP id\r\n 6a1803df08f44-79911836c82mr62312776d6.11.1758353518265; Sat, 20 Sep 2025\r\n 00:31:58 -0700 (PDT)\r\nMIME-Version: 1.0\r\nFrom: Aditya Parmar <parmar2100parmar@gmail.com>\r\nDate: Sat, 20 Sep 2025 13:01:48 +0530\r\nX-Gm-Features: AS18NWDWrKsxqqLbPoiE7foTZz0in2Jgh68-4vBkP8_fM94KgIWJgtYeCCF9kt4\r\nMessage-ID: <CAGxPmpTff41q5Z38+wv=BTMFoj59i5aE6qH5PN3Ajk4j3W3yBw@mail.gmail.com>\r\nSubject: Hi how are you\r\nTo: adityaparmar2003official@gmail.com\r\nContent-Type: multipart/alternative; boundary=\"000000000000d88a88063f36945f\"\r\n\r\n--000000000000d88a88063f36945f\r\nContent-Type: text/plain; charset=\"UTF-8\"\r\n\r\nMy self krishna\r\nHow are you?\r\nVansh\r\n\r\n--000000000000d88a88063f36945f\r\nContent-Type: text/html; charset=\"UTF-8\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n<div dir=3D\"auto\">My self krishna=C2=A0<div dir=3D\"auto\">How=C2=A0are you?<=\r\n/div><div dir=3D\"auto\">Vansh</div><div dir=3D\"auto\"><br></div></div>\r\n\r\n--000000000000d88a88063f36945f--\r\n",
+  "id": "1843767299171933451"
+}

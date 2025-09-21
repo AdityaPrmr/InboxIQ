@@ -1,0 +1,55 @@
+version: '3.8'
+services:
+  backend:
+    build: ./onebox-backend
+    container_name: onebox-backend
+    ports:
+      - "4000:4000"
+    env_file: ./onebox-backend/.env
+    depends_on:
+      - elasticsearch
+    networks:
+      - onebox-net
+    volumes:
+      - ./onebox-backend:/app
+      - /app/node_module
+    command: npm run dev
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.9.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - "9200:9200"
+    networks:
+      - onebox-net
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9200 || exit 1"]
+      interval: 5s
+      retries: 10
+      start_period: 30s
+
+  frontend:
+    build: ./onebox-frontend
+    container_name: onebox-frontend
+    env_file: ./onebox-frontend/.env
+    ports:
+      - "3000:80"   # React built app served via Nginx
+    depends_on:
+      - backend
+    networks:
+      - onebox-net
+    volumes:
+      - ./onebox-frontend:/app       
+      - /app/node_modules  
+
+volumes:
+  backend-data:
+  frontend-data:
+
+networks:
+  onebox-net:
+    driver: bridge
